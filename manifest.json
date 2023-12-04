@@ -1,0 +1,14 @@
+{
+    "manifest_version": 3,
+    "name": "Capture",
+    "description": "Extension Gian lận",
+    "version": "1.0",
+    "content_scripts": [
+      {
+        "matches": ["https://quizizz.com/admin/*"],
+        "js": ["html2canvas.js", "content.js"],
+        "run_at": "document_idle",
+        "all_frames": true
+      }
+    ]
+  }
